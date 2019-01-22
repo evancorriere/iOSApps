@@ -112,7 +112,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="Rf0-Uh-3GQ">
-                                <rect key="frame" x="103" y="474" width="168" height="30"/>
+                                <rect key="frame" x="103.5" y="474" width="168" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cX7-Ff-R71">
                                         <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
