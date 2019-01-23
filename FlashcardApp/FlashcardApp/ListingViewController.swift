@@ -19,9 +19,11 @@ class ListingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         configureSets()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
 
     func configureSets() {
@@ -45,6 +47,15 @@ class ListingViewController: UIViewController {
         sets.append(math)
         sets.append(spanish2)
         sets.append(spanish3)
+    }
+    
+    
+    func insertSet(flashcardSet: FlashcardSet) {
+        sets.append(flashcardSet)
+        let indexPath = IndexPath(row: sets.count - 1, section: 0)
+        tableView.beginUpdates()
+        tableView.insertRows(at: [indexPath], with: .automatic)
+        tableView.endUpdates()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -74,6 +85,20 @@ extension ListingViewController: UITableViewDataSource, UITableViewDelegate {
         return CGFloat(rowHeight)
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            sets.remove(at: indexPath.row)
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.endUpdates()
+        }
+        
+    }
 }
 
 extension ListingViewController: SetCellDelegate {

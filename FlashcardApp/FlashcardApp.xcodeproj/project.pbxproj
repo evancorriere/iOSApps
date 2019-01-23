@@ -16,6 +16,7 @@
 		1EC9C2B021F83CAD006CC59C /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC9C2AF21F83CAD006CC59C /* Flashcard.swift */; };
 		1EC9C2B421F83E1C006CC59C /* SetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC9C2B321F83E1C006CC59C /* SetCell.swift */; };
 		1EC9C2B621F8628E006CC59C /* StudyingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC9C2B521F8628E006CC59C /* StudyingViewController.swift */; };
+		1EC9C2B821F91714006CC59C /* CreateSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC9C2B721F91714006CC59C /* CreateSetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1EC9C2AF21F83CAD006CC59C /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 		1EC9C2B321F83E1C006CC59C /* SetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCell.swift; sourceTree = "<group>"; };
 		1EC9C2B521F8628E006CC59C /* StudyingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyingViewController.swift; sourceTree = "<group>"; };
+		1EC9C2B721F91714006CC59C /* CreateSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				1EC9C29721F83908006CC59C /* AppDelegate.swift */,
 				1EC9C2AB21F83B15006CC59C /* ListingViewController.swift */,
 				1EC9C2AD21F83C40006CC59C /* FlashcardSet.swift */,
+				1EC9C2B721F91714006CC59C /* CreateSetViewController.swift */,
 				1EC9C2B521F8628E006CC59C /* StudyingViewController.swift */,
 				1EC9C2AF21F83CAD006CC59C /* Flashcard.swift */,
 				1EC9C2B321F83E1C006CC59C /* SetCell.swift */,
@@ -149,6 +152,7 @@
 			files = (
 				1EC9C2B421F83E1C006CC59C /* SetCell.swift in Sources */,
 				1EC9C29821F83908006CC59C /* AppDelegate.swift in Sources */,
+				1EC9C2B821F91714006CC59C /* CreateSetViewController.swift in Sources */,
 				1EC9C2AE21F83C40006CC59C /* FlashcardSet.swift in Sources */,
 				1EC9C2B021F83CAD006CC59C /* Flashcard.swift in Sources */,
 				1EC9C2AC21F83B15006CC59C /* ListingViewController.swift in Sources */,

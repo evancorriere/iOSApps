@@ -44,6 +44,8 @@ class StudyingViewController: UIViewController {
         super.viewDidLoad()
         
         lbl.layer.borderColor = UIColor.black.cgColor
+        lbl.layer.borderWidth = 1
+        
         setText()
     }
     
